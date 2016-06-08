@@ -1,0 +1,8 @@
+var Translator = (function (){
+
+	return {
+
+	};
+
+})();
+
