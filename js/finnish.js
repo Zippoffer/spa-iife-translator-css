@@ -1,17 +1,19 @@
 
 
-var translatedWords = "";
-
 var Translator = (function(event) {
+var translated = "";
+    var finnishWords = {"Merry":"Iloinen", "Christmas":"Joulu", "and":"ja", "Happy":"Onnellinen", "New":"Uusi", "Year":"Vuosi"};
+    console.log(finnishWords);
 
-    var holidayString = {"Merry":"iloinen", "Christmas":"joulu", "and":"ja", "Happy":"onnellinen", "New":"uusi", "Year":"vuosi"};
-    console.log(holidayString);
 
+    event.toFinnish = function(motherTongue) {
+        motherTongue = motherTongue.split(" ");
+        for (var i = 0; i < motherTongue.length; i++) {
+        	translated += finnishWords[motherTongue[i]];
+        	translated += " "
+        }
 
-    event.addTranslatedWords = function(motherTongue) {
-        
-
-        return translatedWords;
+        return translated;
     };
 
     return event;
