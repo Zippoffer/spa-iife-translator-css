@@ -16,7 +16,6 @@ function translate () {
   } else {
     translatedText = Translator.toSpanish(langText);
   }
-
   finalText.innerHTML = translatedText;
 }
 
