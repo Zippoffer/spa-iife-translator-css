@@ -11,7 +11,7 @@ function translate () {
   
   if (selected.value === "french") {
     translatedText = Translator.toFrench(langText);
-  } else if (selected.value === "swedish") {
+  } else if (selected.value === "finnish") {
     translatedText = Translator.toFinnish(langText);
   } else {
     translatedText = Translator.toSpanish(langText);
