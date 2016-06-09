@@ -3,7 +3,7 @@
 var Translator = (function(event) {
 var translated = "";
     var finnishWords = {"Merry":"Iloinen", "Christmas":"Joulu", "and":"ja", "Happy":"Onnellinen", "New":"Uusi", "Year":"Vuosi"};
-    console.log(finnishWords);
+    
 
 
     event.toFinnish = function(motherTongue) {
@@ -20,4 +20,4 @@ var translated = "";
 
 })(Translator);
 
-console.log(Translator);
+

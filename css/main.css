@@ -1,7 +1,57 @@
+h1 {
+	font-size: 3em;
+	color: red;
+	text-shadow: 12px 10px 10px green;
+	
+}
+
 #textInput {
+	margin: 3%;
 	display: block;
+	border: 2px solid black;
+	box-shadow: 12px 10px 10px red;
+	background-color: lightblue;
 }
 
 #selectMenu {
+	margin: 4%;
+	border: 2px solid black;
 	display: block;
+	box-shadow: 12px 10px 10px green;
+	background-color: lightgreen;
+}
+
+button {
+	margin: 4%;
+	font-size: 300%;
+	border: 1px solid black;
+	border-radius: 20%;
+	box-shadow: 12px 10px 10px red;
+	background-color: lightyellow;
+	opacity: .7;
+}
+
+body {
+	width: 100%;
+	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/f6/73/83/f67383938b4c55809cd56e1f1d261914.jpg);
+	/*background-size: 100%;*/
+
+}
+
+.box {
+	/*border: 3px solid black;*/
+	padding: 30%;
+	padding-left: 40%;
+	
+
+}
+
+#outputDiv {
+	font-size: 3em;
+	color: yellow;
+	text-shadow: 12px 10px 10px green;
+}
+
+#outputDiv h1 {
+	font-size: 8em;
 }
