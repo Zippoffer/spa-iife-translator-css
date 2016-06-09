@@ -4,12 +4,19 @@ var Translator = (function (wordLife){
 
   wordLife.toFrench = function (word) {
     word = word.split(" ");
-    for (var i = 0; i < word.length; i++) {
-      translated += frenchWords[word[i]];
-      translated += " "
+   for (var i = 0; i < word.length; i++) {
+      var translatedWord = frenchWords[word[i]];
+      if (translatedWord === undefined) {
+        translated = `NO`;
+      } else {
+        translated += translatedWord;
+        translated += " ";
+      }
     }
     return translated;
   };
+
+ 
 
   return wordLife;
 })(Translator);
