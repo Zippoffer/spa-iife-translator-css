@@ -8,7 +8,8 @@ submit.addEventListener("click", translate);
 function translate () {
   var langText = toTranslate.value;
   var translatedText = "";
-  
+  finalText.innerHTML = translatedText;
+
   if (selected.value === "french") {
     translatedText = Translator.toFrench(langText);
   } else if (selected.value === "finnish") {
