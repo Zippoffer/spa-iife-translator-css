@@ -6,7 +6,7 @@ var finalText = document.getElementById("outputDiv");
 submit.addEventListener("click", translate);
 
 function translate () {
-  var langText = toTranslate.value;
+  var langText = toTranslate.value.trim();
   var translatedText = "";
   finalText.innerHTML = "";
 
