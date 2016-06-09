@@ -34,18 +34,11 @@ button {
 body {
 	width: 100%;
 	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/f6/73/83/f67383938b4c55809cd56e1f1d261914.jpg);
-	/*background-size: 100%;*/
-
 }
 
 .box {
-	/*border: 3px solid black;*/
-	/*padding: 30%;*/
 	width: 400px;
 	margin: 100px auto;
-	/*padding-left: 40%;*/
-	
-
 }
 
 #outputDiv {
