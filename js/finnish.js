@@ -3,21 +3,23 @@
 var Translator = (function(event) {
 var translated = "";
     var finnishWords = {"Merry":"Iloinen", "Christmas":"Joulu", "and":"ja", "Happy":"Onnellinen", "New":"Uusi", "Year":"Vuosi"};
-    console.log(finnishWords);
 
 
     event.toFinnish = function(motherTongue) {
         motherTongue = motherTongue.split(" ");
-        for (var i = 0; i < motherTongue.length; i++) {
-        	translated += finnishWords[motherTongue[i]];
-        	translated += " "
-        }
-
-        return translated;
+        for (var i = 0; i < word.length; i++) {
+      var translatedWord = finnishWords[motherTongue[i]];
+      if (translatedWord === undefined) {
+        translated = `NO`;
+      } else {
+        translated += translatedWord;
+        translated += " ";
+      }
+    }
+    return translated;
     };
 
     return event;
 
 })(Translator);
 
-console.log(Translator);

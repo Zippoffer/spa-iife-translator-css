@@ -8,6 +8,7 @@ submit.addEventListener("click", translate);
 function translate () {
   var langText = toTranslate.value;
   var translatedText = "";
+  finalText.innerHTML = "";
   
   if (selected.value === "french") {
     translatedText = Translator.toFrench(langText);
@@ -16,6 +17,21 @@ function translate () {
   } else {
     translatedText = Translator.toSpanish(langText);
   }
+
   finalText.innerHTML = translatedText;
+
+  if (translatedText === "NO") {
+    finalText.innerHTML = "";
+    var nope = document.createElement("h1");
+    var nopeText = document.createTextNode(translatedText);
+    nope.appendChild(nopeText);
+    finalText.appendChild(nope);
+  }
+
+
+  // convert output to text-to-speech
+  var msg = new SpeechSynthesisUtterance(translatedText);
+  window.speechSynthesis.speak(msg);
 }
+
 
