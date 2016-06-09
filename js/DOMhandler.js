@@ -26,6 +26,7 @@ function translate () {
     var nopeText = document.createTextNode(translatedText);
     nope.appendChild(nopeText);
     finalText.appendChild(nope);
+    translatedText.focus
   }
 
 

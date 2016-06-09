@@ -1,13 +1,12 @@
 
 
 var Translator = (function(event) {
-var translated = "";
-    var finnishWords = {"Merry":"Iloinen", "Christmas":"Joulu", "and":"ja", "Happy":"Onnellinen", "New":"Uusi", "Year":"Vuosi"};
-
+  var finnishWords = {"Merry":"Iloinen", "Christmas":"Joulu", "and":"ja", "Happy":"Onnellinen", "New":"Uusi", "Year":"Vuosi", " ":" "};
 
 event.toFinnish = function(motherTongue) {
-	motherTongue = motherTongue.split(" ");
-	for (var i = 0; i < word.length; i++) {
+	var translated = "";
+  motherTongue = motherTongue.split(" ");
+	for (var i = 0; i < motherTongue.length; i++) {
 		var translatedWord = finnishWords[motherTongue[i]];
 		if (translatedWord === undefined) {
 			translated = `NO`;
@@ -20,5 +19,6 @@ event.toFinnish = function(motherTongue) {
 };
 
 return event;
+
 })(Translator);
 
