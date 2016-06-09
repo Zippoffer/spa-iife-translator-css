@@ -10,7 +10,7 @@ function translate () {
   var langText = toTranslate.value.trim();
   var translatedText = "";
   finalText.innerHTML = "";
-
+  
   if (selected.value === "french") {
     translatedText = Translator.toFrench(langText);
   } else if (selected.value === "finnish") {
@@ -27,7 +27,7 @@ function translate () {
     var nopeText = document.createTextNode(translatedText);
     nope.appendChild(nopeText);
     finalText.appendChild(nope);
-    translatedText.focus
+    nope.focus;
   }
 
 
@@ -45,6 +45,9 @@ function translate () {
   msg.lang = 'en-US';
 
   speechSynthesis.speak(msg);
+
+  
+
 }
 
 
