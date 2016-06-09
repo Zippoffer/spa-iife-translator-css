@@ -18,5 +18,5 @@ var Translator = (function(event) {
 
   return event;
 
-})(Translator);
+})(Translator || {});
 

@@ -1,8 +1,3 @@
-var Translator = (function (){
+var Translator = {};
 
-  return {
-
-  };
-
-})();
 

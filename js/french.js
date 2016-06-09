@@ -19,4 +19,4 @@ var Translator = (function (wordLife){
  
 
   return wordLife;
-})(Translator);
+})(Translator || {});
