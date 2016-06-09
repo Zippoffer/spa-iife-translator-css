@@ -17,5 +17,10 @@ function translate () {
     translatedText = Translator.toSpanish(langText);
   }
   finalText.innerHTML = translatedText;
+
+  // convert output to text-to-speech
+  var msg = new SpeechSynthesisUtterance(translatedText);
+  window.speechSynthesis.speak(msg);
 }
+
 
