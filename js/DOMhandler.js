@@ -6,10 +6,10 @@ var finalText = document.getElementById("outputDiv");
 submit.addEventListener("click", translate);
 
 function translate () {
-  var langText = toTranslate.value;
+  var langText = toTranslate.value.trim();
   var translatedText = "";
   finalText.innerHTML = "";
-  
+
   if (selected.value === "french") {
     translatedText = Translator.toFrench(langText);
   } else if (selected.value === "finnish") {
@@ -26,6 +26,7 @@ function translate () {
     var nopeText = document.createTextNode(translatedText);
     nope.appendChild(nopeText);
     finalText.appendChild(nope);
+    translatedText.focus
   }
 
 
