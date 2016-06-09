@@ -5,11 +5,15 @@ var Translator = (function (oldTranslator){
   oldTranslator.toSpanish = function (word) {
     word = word.split(" ");
     for (var i = 0; i < word.length; i++) {
-      translated += spanishWords[word[i]];
-      translated += " ";
+      var translatedWord = spanishWords[word[i]];
+      if (translatedWord === undefined) {
+        translated = `NO`;
+      } else {
+        translated += translatedWord;
+        translated += " ";
+      }
     }
     return translated;
   };
-
   return oldTranslator;
 })(Translator);
